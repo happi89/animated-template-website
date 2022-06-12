@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <!-- Tailwind Library -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+    <!-- animate library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body class="text-gray-800 antialiased">
 
@@ -19,9 +23,9 @@
       <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <!-- Nav Left Side -->
           <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-              <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="https://www.creative-tim.com/learning-lab/tailwindcss-starter-project#/presentation">
+              <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="#">
                 <!-- Nav Title -->
-                Creative Tim
+                Animated Template
               </a>
               <!-- Hamburger Menu (Mobile) -->
               <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
@@ -32,27 +36,10 @@
         <!-- Nav Right Side -->
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
           <!-- Social Media Button -->
-          <li class="flex items-center">
-            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="#pablo">
-              <!-- Icon -->
-              <i class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "></i>
-              <span class="lg:hidden inline-block ml-2">Share</span>
-            </a>
-          </li>
           <!-- Social Media Button -->
           <li class="flex items-center">
             <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="#pablo">
-              <!-- Icon -->
-              <i class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "></i>
-              <span class="lg:hidden inline-block ml-2">Tweet</span>
-            </a>
-          </li>
-          <!-- Social Media Button -->
-          <li class="flex items-center">
-            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="#pablo">
+              href="https://github.com/happi89" target="_blank">
               <!-- Icon -->
               <i class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "></i>
               <span class="lg:hidden inline-block ml-2">Star</span>
@@ -70,7 +57,7 @@
       <!-- Background Image -->
       <div
         class="absolute top-0 w-full h-full bg-center bg-cover"
-        style="">
+        style="background: url(https://images.unsplash.com/photo-1655012325190-89c9153a563c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80)">
         <!-- Overlay -->
         <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
       </div>
@@ -79,10 +66,10 @@
         <div class="items-center flex flex-wrap">
           <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
             <div class="pr-12">
-              <h1 class="text-white font-semibold text-5xl">
+              <h1 class="text-white font-semibold text-5xl"  data-aos="fade-up">
                 Welcome your epiphany.
               </h1>
-              <p class="mt-4 text-lg text-gray-300">
+              <p class="mt-4 text-lg text-gray-300"  data-aos="fade-up">
                 Lorem ipsum dolor sit. Eum totam aspernatur aliquam praesentium aperiam magni, dignissimos, atque incidunt fuga nulla distinctio eligendi enim placeat nesciunt, soluta maxime nihil ipsa minus!
               </p>
             </div>
@@ -119,7 +106,7 @@
         <div class="flex flex-wrap">
           <!-- Card -->
           <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+            <div  data-aos="fade-right" data-aos-delay="400" class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
               <div class="px-4 py-5 flex-auto">
                 <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
                   <!-- Icon -->
@@ -135,7 +122,7 @@
           </div>
           <!-- Card -->
           <div class="w-full md:w-4/12 px-4 text-center">
-            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+            <div data-aos="fade-up" data-aos-delay="400" class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
               <div class="px-4 py-5 flex-auto">
                 <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
                   <!-- Icon -->
@@ -151,7 +138,7 @@
           </div>
           <!-- Card -->
           <div class="pt-6 w-full md:w-4/12 px-4 text-center">
-            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+            <div data-aos="fade-left" data-aos-delay="400" class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
               <div class="px-4 py-5 flex-auto">
                 <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
                   <!-- Icon -->
@@ -170,7 +157,7 @@
         <!-- Text Box and Card Container -->
         <div class="flex flex-wrap items-center mt-32">
           <!-- Text Box Container -->
-          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto"  data-aos="fade-right" data-aos-delay="200">
             <!-- Text Box -->
             <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
               <!-- Icon -->
@@ -193,12 +180,12 @@
           </div>
 
           <!-- Image Cap & Text Card -->
-          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto" data-aos="fade-left">
             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500">
               <!-- Image -->
               <img
                 alt="..."
-                src=""
+                src="https://images.unsplash.com/photo-1655019680534-0838d2870bfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
                 class="w-full align-middle rounded-t-lg"
               />
               <blockquote class="relative p-8 mb-4">
@@ -255,17 +242,17 @@
       <!-- Section Container -->
       <div class="container mx-auto px-4">
         <div class="items-center flex flex-wrap">
-          <div class="w-full md:w-4/12 ml-auto mr-auto px-4"> 
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4"  data-aos="fade-right"> 
             <!-- Image -->
             <img
               alt="..."
               class="max-w-full rounded-lg shadow-lg"
-              src=""
+              src="https://images.unsplash.com/photo-1511458427008-91ea98e579a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
             />
           </div>
           <!-- Text Box Container-->
           <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
-            <div class="md:pr-12">
+            <div class="md:pr-12"  data-aos="fade-left" data-aos-delay="200">
               <div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
                 <!-- Icon -->
                 <i class="fas fa-rocket text-xl"></i>
@@ -334,7 +321,7 @@
       <div class="container mx-auto px-4">
         <!-- Text Box -->
         <div class="flex flex-wrap justify-center text-center mb-24">
-          <div class="w-full lg:w-6/12 px-4">
+          <div class="w-full lg:w-6/12 px-4" data-aos="fade-in">
             <h2 class="text-4xl font-semibold">Here are our heroes</h2>
             <p class="text-lg leading-relaxed m-4 text-gray-600">
               According to the National Oceanic and Atmospheric
@@ -346,12 +333,12 @@
         <!-- Flex Row Container -->
         <div class="flex flex-wrap">
           <!-- Item -->
-          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"  data-aos="fade-in">
             <div class="px-6">
               <!-- Image -->
               <img
                 alt="..."
-                src=""               
+                src="https://randomuser.me/api/portraits/men/22.jpg"               
                 class="shadow-lg rounded-full max-w-full mx-auto"
                 style="max-width: 120px;"
               />
@@ -379,12 +366,12 @@
             </div>
           </div>
           <!-- Item -->
-          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="200">
             <div class="px-6">
               <!-- Image -->
               <img
                 alt="..."
-                src=""
+                src="https://randomuser.me/api/portraits/women/90.jpg"
                 class="shadow-lg rounded-full max-w-full mx-auto"
                 style="max-width: 120px;"
               />
@@ -408,12 +395,12 @@
             </div>
           </div>
           <!-- Item -->
-          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="400">
             <div class="px-6">
               <!-- Image -->
               <img
                 alt="..."
-                src=""
+                src="https://randomuser.me/api/portraits/women/31.jpg"
                 class="shadow-lg rounded-full max-w-full mx-auto"
                 style="max-width: 120px;"
               />
@@ -441,12 +428,12 @@
             </div>
           </div>
           <!-- Item -->
-          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="600">
             <div class="px-6">
               <!-- Image -->
               <img
                 alt="..."
-                src=""
+                src="https://randomuser.me/api/portraits/women/64.jpg"
                 class="shadow-lg rounded-full max-w-full mx-auto"
                 style="max-width: 120px;"
               />
@@ -508,7 +495,7 @@
       <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
         <!-- Text Box -->
         <div class="flex flex-wrap text-center justify-center">
-          <div class="w-full lg:w-6/12 px-4">
+          <div class="w-full lg:w-6/12 px-4" data-aos="fade-in">
             <h2 class="text-4xl font-semibold text-white">Build something</h2>
             <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
               Put the potentially record low maximum sea ice extent tihs year
@@ -520,7 +507,7 @@
         <!-- Flex Row Container -->
         <div class="flex flex-wrap mt-12 justify-center">
           <!-- Item -->
-          <div class="w-full lg:w-3/12 px-4 text-center">
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in" data-aos-delay="400">
             <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
               <!-- Icon -->
               <i class="fas fa-medal text-xl"></i>
@@ -535,7 +522,7 @@
             </p>
           </div>
           <!-- Item -->
-          <div class="w-full lg:w-3/12 px-4 text-center">
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in" data-aos-delay="200">
             <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
               <!-- Icon -->
               <i class="fas fa-poll text-xl"></i>
@@ -550,7 +537,7 @@
             </p>
           </div>
           <!-- Item -->
-          <div class="w-full lg:w-3/12 px-4 text-center">
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in">
             <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
               <!-- Icon -->
               <i class="fas fa-lightbulb text-xl"></i>
@@ -571,8 +558,8 @@
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
           <div class="w-full lg:w-6/12 px-4">
-            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
-              <div class="flex-auto p-5 lg:p-10">
+            <div data-aos="fade-in" class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
+              <div class="flex-auto p-5 lg:p-10" >
                 <h4 class="text-2xl font-semibold">Want to work with us?</h4>
                 <p class="leading-relaxed mt-1 mb-4 text-gray-600">
                   Complete this form and we will get back to you in 24 hours.
@@ -679,19 +666,19 @@
               <ul class="list-unstyled">
                 <li>
                   <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://www.creative-tim.com/presentation">About Us</a>
+                    href="https://www.creative-tim.com/presentation">About Us</a>
                 </li>
                 <li>
                   <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://blog.creative-tim.com">Blog</a>
+                    href="https://blog.creative-tim.com">Blog</a>
                 </li>
                 <li>
                   <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://www.github.com/creativetimofficial">Github</a>
+                    href="https://www.github.com/creativetimofficial">Github</a>
                 </li>
                 <li>
                   <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                     href="https://www.creative-tim.com/bootstrap-themes/free">Free Products</a>
+                    href="https://www.creative-tim.com/bootstrap-themes/free">Free Products</a>
                 </li>
               </ul>
             </div>
@@ -739,11 +726,4 @@
   </footer>
   <!-- End of Footer Section -->
 </body>
-<!-- Navigation Script -->
-<script>
-  function toggleNavbar(collapseID) {
-    document.getElementById(collapseID).classList.toggle("hidden");
-    document.getElementById(collapseID).classList.toggle("block");
-  }
-</script>
 </html>
